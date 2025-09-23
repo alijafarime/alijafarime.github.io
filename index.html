@@ -34,7 +34,11 @@
     .two-col{display:grid;grid-template-columns:1fr 260px;gap:20px;align-items:start}
     aside.card{background:#fbfbff;border:1px solid #f0f3ff;padding:16px;border-radius:8px;position:sticky;top:24px;}
     footer{margin-top:40px;padding-top:14px;border-top:1px dashed #eee;color:#6b7280;font-size:14px}
-    @media (max-width:820px){.two-col{grid-template-columns:1fr}.photo{width:96px;height:96px;}.aside.card{position:static}}
+    @media (max-width:820px){
+      .two-col{grid-template-columns:1fr}
+      .photo{width:96px;height:96px;}
+      .aside.card{position:static}
+    }
     a.inline-link{color:var(--accent);text-decoration:none}
     a.inline-link:hover{text-decoration:underline}
     small.comment{color:#6b7280;display:block;margin-top:2px;font-size:0.85em;}
@@ -58,19 +62,17 @@
           <h2>Talks</h2>
           <ul class="simple">
             <li>
-              <ul class="simple">
-  <li>
-    <a class="inline-link" href="files/Necklaces,%20Cycles%20and%20Counting.pdf" download>
-      Polya’s Enumeration Theorem
-    </a>
-    <small class="comment">(July 2025, Isfahan Mathematics House)</small>
-  </li>
-  <li>
-    History of Irrational Ratios and Dedekind’s Cut
-    <small class="comment">(December 2024, Isfahan Mathematics House)</small>
-  </li>
-  <!-- Add more talks here in the same format -->
-</ul>
+              <a class="inline-link" href="files/Necklaces-Cycles-and-Counting.pdf" download>
+                Polya’s Enumeration Theorem
+              </a>
+              <small class="comment">(July 2025, Isfahan Mathematics House)</small>
+            </li>
+            <li>
+              History of Irrational Ratios and Dedekind’s Cut
+              <small class="comment">(December 2024, Isfahan Mathematics House)</small>
+            </li>
+          </ul>
+        </section>
 
         <section id="contact">
           <h2>Contact</h2>
@@ -83,7 +85,6 @@
           <h2>Courses</h2>
           <ul>
             <li><a class="inline-link" href="MA4041.html">Mathematical Analysis I</a></li>
-            <!-- Add more courses if needed -->
           </ul>
         </div>
 
