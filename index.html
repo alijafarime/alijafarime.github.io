@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ali Jafari</title>
+  <meta name="description" content="Personal academic website">
+  <style>
+    :root{
+      --accent:#0b63ff;
+      --bg:#ffffff;
+      --fg:#111827;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.5;
+      font-family:inherit;
+      direction: ltr;
+      text-align: left;
+    }
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .photo{width:110px;height:110px;border-radius:8px;flex:0 0 110px;object-fit:cover;border:2px solid #eee}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:#374151}
+    .meta a{color:var(--accent);text-decoration:none}
+    section{margin-top:28px}
+    h2{font-size:18px;margin:0 0 8px}
+    ul.simple, ul{padding-left:20px;list-style:disc}
+    .two-col{display:grid;grid-template-columns:1fr 260px;gap:20px;align-items:start}
+    aside.card{background:#fbfbff;border:1px solid #f0f3ff;padding:16px;border-radius:8px;position:sticky;top:24px;}
+    footer{margin-top:40px;padding-top:14px;border-top:1px dashed #eee;color:#6b7280;font-size:14px}
+    @media (max-width:820px){.two-col{grid-template-columns:1fr}.photo{width:96px;height:96px;}.aside.card{position:static}}
+    a.inline-link{color:var(--accent);text-decoration:none}
+    a.inline-link:hover{text-decoration:underline}
+    small.comment{color:#6b7280;display:block;margin-top:2px;font-size:0.85em;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="main.jpg" alt="Profile photo" class="photo" onerror="this.src='https://placehold.co/110x110?text=Photo'">
+      <div>
+        <h1>Ali Jafari</h1>
+        <div class="meta">
+          <p class="lead">Hello! I am a third-year undergraduate mathematics student at Isfahan University of Technology. I am also a math instructor and the head of the student section at Isfahan Mathematics House.</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="two-col">
+      <main>
+        <section id="talks">
+          <h2>Talks</h2>
+          <ul class="simple">
+            <li>
+              <a class="inline-link" href="files/polya_enumeration.pdf" download>Polya’s Enumeration Theorem</a>
+              <small class="comment">(July 2025, Isfahan Mathematics House)</small>
+            </li>
+            <li>
+              <a class="inline-link" href="files/dedekind_cut.pdf" download>History of Irrational Ratios and Dedekind’s Cut</a>
+              <small class="comment">(December 2024, Isfahan Mathematics House).</small>
+            </li>
+            <!-- Add more talks here in the same format -->
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>You can reach me at <span id="email">a.jafari@math.iut.ac.ir</span>.</p>
+        </section>
+      </main>
+
+      <aside class="card">
+        <div class="info-box">
+          <h2>Courses</h2>
+          <ul>
+            <li><a class="inline-link" href="MA4041.html">Mathematical Analysis I</a></li>
+            <!-- Add more courses if needed -->
+          </ul>
+        </div>
+
+        <div class="info-box" style="margin-top:16px">
+          <h2>Social</h2>
+          <ul>
+            <li><a class="inline-link" href="https://www.linkedin.com/in/ali-jafari-math/" target="_blank">LinkedIn</a></li>
+            <li><a class="inline-link" href="https://www.aparat.com/AliJafariMath/" target="_blank">Aparat</a></li>
+            <li><a class="inline-link" href="https://www.youtube.com/in/@AliJafariMath/" target="_blank">YouTube</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
